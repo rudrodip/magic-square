@@ -1,0 +1,53 @@
+<!-- made this project in a rush, so its not good -->
+<!-- you're welcome to review 💙 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Square</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-section">
+        <form action="" id="n-input-form">
+            <p id="n-input-text">(N x N) square</p>
+            <input type="text" name="n" id="n-input-box">
+        </form>
+        <button id="n-input-button" class="n-button">Create</button>
+    </div>
+    <section>
+        <div class="main" id="main">
+        </div>
+        <p id="value"></p>
+    </section>
+
+    <script src="script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyD77LIhv8dq8sbWN4NsgmuoNapTTrelXB0",
+          authDomain: "magicsquare-6a176.firebaseapp.com",
+          projectId: "magicsquare-6a176",
+          storageBucket: "magicsquare-6a176.appspot.com",
+          messagingSenderId: "182876400146",
+          appId: "1:182876400146:web:969f44b7773e5975f046cb",
+          measurementId: "G-NDDN69PLR6"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
+</html>
