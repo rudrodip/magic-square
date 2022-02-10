@@ -122,7 +122,11 @@ function mark_box(ele){
 create_button.addEventListener("click", (e)=>{
     const nth = document.getElementById("n-input-box").value;
     n = parseInt(nth)
-    create_box(n, widthCalc(n))
+    if (n <= 15){
+        create_box(n, widthCalc(n))
+    } else {
+        window.alert("N must be less than or equal to 15 for this simulation")
+    }
 })
 
 

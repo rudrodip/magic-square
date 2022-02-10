@@ -10,6 +10,18 @@ body{
     text-align: center;
 }
 
+a{
+    color: yellow;
+}
+
+.credit {
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 200px;
+}
 
 .form-section{
     display: flex;
