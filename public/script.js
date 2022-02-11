@@ -132,7 +132,9 @@ create_button.addEventListener("click", (e)=>{
 
 
 document.addEventListener("click", e=>{
-    if (e.target.className == COL_CLASS && e.target.style.backgroundColor != ROW_COL_BG_COLOR){
+    class_name = e.target.className
+    background_image = e.target.style.backgroundImage
+    if (class_name == COL_CLASS && !background_image.includes(ROW_COL_BG_COLOR)){
         mark_box(e.target)
     }
 })
