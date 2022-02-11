@@ -21,7 +21,7 @@ const COL_ATTR_NAME = 'col'
 const BOX_CLASS = 'box'
 
 //other
-const ROW_COL_BG_COLOR = 'red'
+const ROW_COL_BG_COLOR = 'rgb(0, 224, 116)'
 const ROW_COL_TEXT_COLOR = 'azure'
 
 // percentage of margin
@@ -94,7 +94,8 @@ function create_box(n, box_width){
 
 // changes style of element
 function changeStyle(i, bg_color, text_color){
-    i.style.backgroundColor = bg_color
+    i.style.backgroundImage = `linear-gradient(to bottom right, aqua, ${bg_color})`
+    // i.style.backgroundColor = bg_color
     i.style.color = text_color
 }
 
